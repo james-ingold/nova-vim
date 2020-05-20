@@ -42,7 +42,7 @@ call s:highlight_helper("WarningMsg", "${uiGroups.userActionNeeded}", "")
 call s:highlight_helper("SpellBad", "${uiGroups.userActionNeeded}", "")
 call s:highlight_helper("SpellCap", "${uiGroups.userActionNeeded}", "")
 call s:highlight_helper("Todo", "${uiGroups.userActionNeeded}", "")
-call s:highlight_helper("SignColumn", "NONE", "${uiGroups.userActionNeeded}")
+call s:highlight_helper("SignColumn", "NONE", "${ansiGroups.normal.black}")
 call s:highlight_helper("typescriptParenError", "${
   uiGroups.userActionNeeded
 }", "")
@@ -107,7 +107,7 @@ call s:highlight_helper("DiffChange", "${uiGroups.background}", "${
   versionControlGroups.modified
 }")
 call s:highlight_helper("DiffDelete", "${versionControlGroups.removed}", "")
-call s:highlight_helper("DiffText", "${uiGroups.background}", "${
+call s:highlight_helper("DiffText", "${ansiGroups.normal.red}", "${
   versionControlGroups.modified
 }", "BOLD")
 call s:highlight_helper("GitGutterAdd", "${versionControlGroups.added}", "")
